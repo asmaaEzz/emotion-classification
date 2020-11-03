@@ -1,0 +1,33 @@
+<html>
+<style>
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+   margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+h1 {
+  margin-top: 35px;
+}
+    body {
+        background-image: url("../static/images/background.jpg")
+    }
+
+</style>
+   <body >
+   <h1 align="center" >EMOTION CLASSIFIER</h1>
+     <div class="center">
+         <form action = "http://localhost:5000/uploader" method = "POST"
+         enctype = "multipart/form-data">
+         <input type = "file" name = "file" />
+         <input type = "submit"/>
+      </form>
+     </div>
+
+   </body>
+</html>
